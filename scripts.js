@@ -18,7 +18,6 @@ function decript() {
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
         let index = alphabet.indexOf(char);
-
         if (index === -1) {
             encrypted += char;
             steps += `Шаг ${i + 1}: '${char}' не в алфавите, оставляем без изменений.`;
